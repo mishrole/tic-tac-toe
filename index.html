@@ -7,27 +7,40 @@
     <script type='text/javascript' src='assets/js/main.js'></script>
 </head>
 <body>
-<div id="contenedor">
 
     <div>
-    <h1>Tic-tac-toe</h1>    
+    <h1>Tic tac toe</h1>    
     </div>
 
+<div id="contenedor">
+
+    <div id="contenedor2">
+        <div id="caja-contador">
+            <div id="contadorX">
+                <span id="xTitle" class="title">Victorias de X: </span><strong id="xWins"> 0 </strong><span id="xVeces" class="title"> veces</span>
+            </div>
+            <div id="contadorO">
+                <span id="oTitle" class="title">Victorias de O: </span><strong id="oWins"> 0 </strong><span id="oVeces" class="title"> veces</span>
+            </div>
+        </div>
+    </div>
+<div id="contenedor3">
     <div id="juego">
 
-        <input id="b1" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b2" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b3" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b4" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b5" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b6" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b7" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b8" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
-        <input id="b9" class="botones" type="button" value="+" onclick="juego(this.value, this.id)">
+        <input id="b1" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b2" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b3" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b4" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b5" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b6" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b7" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b8" class="botones" type="button" value="+" onclick="juego(this.id)">
+        <input id="b9" class="botones" type="button" value="+" onclick="juego(this.id)">
 
     </div>
-
+</div>
     <input id="restart" type="submit" value="Nueva partida" onclick="nuevaPartida()">
 </div>
+
 </body>
 </html>
