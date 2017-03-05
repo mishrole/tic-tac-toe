@@ -3,7 +3,7 @@
 	var x = "x";
 	var o = "o";
 	var turno;
-	//var todas = document.querySelectorAll(".botones")
+
 function juego(clicked_value, clicked_id){
 
 	var b1 = document.getElementById("b1")
@@ -15,16 +15,15 @@ function juego(clicked_value, clicked_id){
 	var b7 = document.getElementById("b7")
 	var b8 = document.getElementById("b8")
 	var b9 = document.getElementById("b9")
-//	var contador = document.getElementsByClassName("botones")
 
 	//Si turno == x, turno = o, de otro modo turno = x
 	//Cumple con que X inicie la partida
 
 	turno = (turno == x) ? o : x;
 
-	//Nota: clicked_id toma this.id
-	//Nota: setAttribute añade un atributo dentro de b1, disabled deshabilita el botón
-	//Nota: style.color para cambiar estilo del value al hacer click, de #ccc a #fff
+	//clicked_id toma this.id
+	//setAttribute añade un atributo dentro de b1, disabled deshabilita el botón
+	//style.color para cambiar estilo del value al hacer click, de #ccc a #fff
 
 	if(clicked_id == "b1"){
 		b1.value = turno
@@ -116,44 +115,7 @@ function juego(clicked_value, clicked_id){
 }
 
 //Recargar al hacer click en el botón de Nueva partida
-//Nota: Busca un método sin recarga, como utilizar la acción del botón para volver al inicio del juego
-//      sin necesidad de 0.5s de recarga
 
 function nuevaPartida(){ 
     window.location.reload(); 
 } 
-
-
-
-
-	/* Condicionales basura
-
-	else if(b1.value == "+" && b2.value == "+" &&
-			 b3.value == "+" && b4.value == "+" &&
-			 b5.value == "+" && b6.value == "+" &&
-			 b7.value == "+" && b8.value == "+" &&
-			 b9.value == "+"){
-		return true;
-	}
-
-	else if((b1.value == "x" || b1.value == "o") && (b2.value == "x" || b2.value == "o") &&
-			(b3.value == "x" || b3.value == "o") && (b4.value == "x" || b4.value == "o") &&
-			(b5.value == "x" || b5.value == "o") && (b6.value == "x" || b6.value == "o") &&
-			(b7.value == "x" || b7.value == "o") && (b8.value == "x" || b8.value == "o") &&
-			(b9.value == "x" || b9.value == "o")){
-		alert("Es un empate")
-	}
-}
-
-	else if(b1.getAttribute("disabled") == "disabled" &&
-			b2.getAttribute("disabled") == "disabled" &&
-			b3.getAttribute("disabled") == "disabled" &&
-			b4.getAttribute("disabled") == "disabled" &&
-			b5.getAttribute("disabled") == "disabled" &&
-			b6.getAttribute("disabled") == "disabled" &&
-			b7.getAttribute("disabled") == "disabled" &&
-			b8.getAttribute("disabled") == "disabled" &&
-			b9.getAttribute("disabled") == "disabled"){
-		alert("Es un empate")
-
-		*/
