@@ -193,4 +193,6 @@ function nuevaPartida(){
 	b9.setAttribute("onclick", "juego(this.id)")
 	b9.removeAttribute("disabled", "disabled")
 
+	turno = (turno == x) ? o : x;
+
 }
