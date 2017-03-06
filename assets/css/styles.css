@@ -16,10 +16,6 @@ h1{
 	margin-top: 40px;
 }
 
-#contenedor2 {
-	width: 400px;
-}
-
 #contenedor3 {
 	width: 400px;
 	height: 480px;
@@ -34,6 +30,8 @@ h1{
 	margin-bottom: 20px;
 	color: #fff;
 	margin-left: 35px;
+	background: white;
+	box-sizing: border-box;
 }
 
 #contadorX, #contadorO {
@@ -41,24 +39,32 @@ h1{
 	border-radius: 3px;
 	margin-bottom: 3px;
 	border: 2px solid #898989;
+	background: #dcdcdc;
 }
 
 #xTitle, #oTitle {
 	background: #dcdcdc;
-	border: 1px solid #dcdcdc;
-}
-
-#xVeces, #oVeces {
-	float: right;
-	background: #dcdcdc;
-	text-align: center;
+	float: none;
+	border-left: 5px solid #dcdcdc;
+	margin-right: 2px;
 }
 
 #xWins, #oWins{
-	margin-left: 30px;
+	float: none;
 	color: #ccc;
 	text-align: center;
+	margin-left: 3px;
+	border-left: 12px solid white;
+	border-right: 10px solid white;
+	background: white;
 }
+
+#xVeces, #oVeces {
+	float: none;
+	background: #dcdcdc;
+	margin-left: 20px;
+}
+
 
 .botones {
 	float: none;
