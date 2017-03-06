@@ -3,7 +3,7 @@
 	var x = "x";
 	var o = "o";
 	var vacio = "+";
-	var turno = o
+	var turno = o;
 	var xGanadas = 0;
 	var oGanadas = 0;
 
@@ -107,6 +107,7 @@ function juego(clicked_id){
 		var oGana = true;
 		contador();
 	}
+
 
 	//Nota: Si xGana u oGana son true, dependiendo del if de condiciones para jugadas ganadoras
 	//		se remueve el atributo onclick y button para desenlazar la función e inhabilitar los clicks
