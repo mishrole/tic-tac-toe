@@ -38,7 +38,6 @@ h1{
 
 #contadorX, #contadorO {
 	width: 85%;
-	height: 34.5px;
 	border-radius: 3px;
 	margin-bottom: 3px;
 	border: 2px solid #898989;
@@ -53,13 +52,9 @@ h1{
 	float: right;
 	background: #dcdcdc;
 	text-align: center;
-	margin-left: 3px;
-	border-left: 8px solid #dcdcdc;
-	border-right: 8px solid #dcdcdc
 }
 
 #xWins, #oWins{
-	margin-left: 25px;
 	color: #ccc;
 	text-align: center;
 }
