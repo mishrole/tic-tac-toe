@@ -21,15 +21,16 @@ h1{
 	height: 480px;
 	margin-left: 40px;
 	margin-top: 40px;
+	box-sizing: border-box;
 }
 
 #caja-contador {
-	width: 400px;
+	width: 430px;
 	float: none;
 	font-size: 30px;
 	margin-bottom: 20px;
 	color: #fff;
-	margin-left: 35px;
+	margin-left: 22.5px;
 	background: white;
 	box-sizing: border-box;
 }
