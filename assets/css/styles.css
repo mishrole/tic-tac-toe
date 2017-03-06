@@ -57,6 +57,7 @@ h1{
 	border-left: 12px solid white;
 	border-right: 10px solid white;
 	background: white;
+	box-sizing: border-box;
 }
 
 #xVeces, #oVeces {
