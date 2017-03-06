@@ -55,6 +55,7 @@ h1{
 }
 
 #xWins, #oWins{
+	margin-left: 30px;
 	color: #ccc;
 	text-align: center;
 }
